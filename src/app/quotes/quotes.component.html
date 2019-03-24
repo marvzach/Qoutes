@@ -1,3 +1,12 @@
-<p>
-  quotes works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5">
+      <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+    </div>
+    <div class="col-md-7">
+      <div class="display-quotes" *ngFor='let quote of quotes, let i = index'>
+        <div class="details">
+          <h2 class="one2">{{quote.enterQuote}} </h2> <h2><cite>-{{quote.author}}</cite></h2>
+          <br>
+          <button class="btn btn-primary" (click)='toggleDetails(i)' type="button" name="button">More Details </button>
+          <br>
