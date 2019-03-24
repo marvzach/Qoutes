@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-image: url("https://images.unsplash.com/photo-1551393336-f87400010d7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  font-family: 'Kreon', serif;
+  margin:30px;
+  background-size: cover;
+  color: white;
+}
+p{
+  font-size: 20px;
+}
+.one1{
+  font-size: 50px;
+}
+.one2{
+  font-size: 30px;
+}
