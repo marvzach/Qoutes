@@ -6,9 +6,9 @@
     <div class="col-md-7">
       <div class="display-quotes" *ngFor='let quote of quotes, let i = index'>
         <div class="details">
-          <h2 class="one2">{{quote.enterQuote}} </h2> <h2><cite>-{{quote.author}}</cite></h2>
+          <h4 class="one2">{{quote.enterQuote}} </h4> <h4><cite>-{{quote.author}}</cite></h4>
           <br>
-          <button class="btn btn-primary" (click)='toggleDetails(i)' type="button" name="button">More Details </button>
+          <button class="btn btn-primary btnspace" (click)='toggleDetails(i)' type="button" name="button">More Details </button>
           <br>
 
           <app-details *ngIf="quote.showDetails" [quote]='quote' (isDelete)='deleteQuote($event, i)' (isPlus)='plusVote($event, i)'
