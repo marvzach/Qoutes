@@ -6,6 +6,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { DetailsComponent } from './details/details.component';
 import { HighlightDirective } from './highlight.directive';
 import { CountPipePipe } from './count-pipe.pipe';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CountPipePipe } from './count-pipe.pipe';
     QuotesComponent,
     DetailsComponent,
     HighlightDirective,
-    CountPipePipe
+    CountPipePipe,
+    FormsComponent
   ],
   imports: [
     BrowserModule
