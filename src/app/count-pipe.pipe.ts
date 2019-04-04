@@ -6,13 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class CountPipePipe implements PipeTransform {
 
   transform(value: any): any {
-    let today:any = new Date(); //get current date and time
-    // let todayWithNoTime:any = new Date(today.getFullYear(),today.getMonth(),today.getDate())
-    var dateDifference =Math.abs(value-today)// returns value in milliseconds
-    const secondsInADay= 86400; //60 seconds*60 minutes in an hour *24 hours
-
-    var dateDifferenceSeconds=dateDifference*0.001; //converts to seconds
-
+    let today:any = new Date();
+    var dateDifference =Math.abs(value-today)
+    const secondsInADay= 86400;
+    var dateDifferenceSeconds=dateDifference*0.001;
     var days = Math.round(dateDifferenceSeconds/secondsInADay);
     dateDifferenceSeconds -=(days*secondsInADay);
     var hours = Math.round(dateDifferenceSeconds/(60*24)) ;
